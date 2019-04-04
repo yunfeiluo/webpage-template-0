@@ -1,0 +1,357 @@
+@charset "utf-8";
+body,nav,ul,button{margin:0;padding:0;}
+html{
+    scroll-behavior: smooth;
+}
+
+#headerBGI{
+    height: 1000px;
+    width: 100%;
+    background-image: url(../images/black0.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;  /* for Webkit kernal browser such as Chrome和Safari */
+    -o-background-size: cover;  /* for Opera */  
+    /*fade animation: */
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding:0 0 50px 0;
+}
+ul{list-style:outside none none;}
+a{text-decoration: none;}
+*{box-sizing: border-box;margin: 0;padding: 0;}
+.clearfix{
+    clear: both;
+}
+.container{
+    width:900px;
+    margin:0 auto;
+}
+.container .logo{
+    position: absolute;
+}
+.container h2{
+    font-weight:normal;
+    text-align: center;
+    color:rgb(16, 17, 14);
+    font-size: 40px;
+    font-family: "arial";
+    padding:50px 0 30px 0;
+}
+.container h1{
+    font-weight:normal;
+    text-align: center;
+    color:rgb(16, 17, 14);
+    font-size: 25px;
+    font-family: "arial";
+    padding:1px 0 30px 0;
+}
+.container p{
+    font-size: 20px;
+    text-align: left;
+    color:rgb(61, 65, 55);
+}
+.container .manual-button{
+    padding:10px 220px 10px 0;
+}
+.container .manual-button li img{
+    width: 100px;
+    height: 70px;
+    padding:10px 0 0 7px;
+}
+/*shop button*/
+#shop{
+    float: right;
+    padding:10px 0 10px 0;   
+}
+#shop img{
+    width: 100px;
+    height: 70px;
+    padding:10px 0 0 7px;
+}
+/*location button*/
+#location{
+    float: right;
+    padding:10px 0 10px 0;
+}
+#location img{
+    width: 100px;
+    height: 70px;
+    padding:10px 0 0 7px;
+}
+
+#sign_up{
+    background: url("../images/sign-b.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;  /* for Webkit kernal browser such as Chrome和Safari */
+    -o-background-size: cover;  /* for Opera */ 
+    position: absolute;
+    float: right;
+    display: none;
+    padding:10px 10px 10px 10px;
+}
+.nav {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height:100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.nav ul{
+    width:60%;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.nav ul li{
+    
+    float: left;
+    width:20%;
+    text-align: left;
+}
+.nav a{color: #000;}
+
+.footer{
+    height:290px;
+    background-color: #333333;
+}
+.footer .top{padding: 45px 0 0 0;display:block;float: left}
+.footer .top figure{width:225px;float: left;}
+.footer .top h4{color: #fff;font-size:26px;padding:0 0 10px;}
+.footer .top li{line-height: 1.5;}
+.footer .top p{
+    font-size: 18px;
+    line-height: 30px;
+    color:#e2e0e0;
+}
+.footer .top a{
+    color:#e0dede;
+}
+#input{width: 160px;height:40px;padding-left: 10px;float: left;background-color: #333333;color: #fff;border:1px solid #ffffff;}
+#inputbtn{width: 40px;height:40px;float: left;background: url("../images/arrow.png") center no-repeat;border:1px solid #ffffff;border-left: none;}
+.footer .bottom {
+    color:#777777;      
+    text-align:center;
+    padding:230px 0 0 0;
+}
+
+/*About us*/
+.about_us{
+    background: url("../images/bg.png");
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding:30px 0 75px 0;
+}
+.about_us img{
+    float: right;
+    height: 400px;
+    width: 400px;
+}
+.about_us p{
+    text-align: left;
+    line-height: 35px;
+    padding:1px 0 75px 0;
+}
+.about_us iframe{
+    float: right;
+    width: 550px;
+    height: 400px;
+    padding:10px 20px 0 10px;
+}
+
+/*service*/
+.service{    
+    width: 100%;
+    background: url("../images/c1.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;  /* for Webkit kernal browser such as Chrome和Safari */
+    -o-background-size: cover;  /* for Opera */     
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding:15px 0 65px 0;
+}
+.service img{
+    height: 600px;
+    width: 320px;
+    padding:10px 0 70px 0;
+}
+.service p{
+    color:#ffffff;
+    float: right;
+    line-height: 35px;
+    padding:0 0 10px 0;
+}
+.service h1{
+    color:#d4d3d3;
+}
+.service h2{
+    color:#ffffff;
+}
+
+/*our factory*/
+.factory{
+    background: url("../images/bg.png");
+    height:800px;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding:30px 0 75px 0;
+}
+.factory figure{
+    width:300px;
+    float: left;
+    padding:20px 20px 100px 20px;
+}
+.factory figure p{
+    font-size: 17px;
+    text-align: center;
+}
+.factory figure img{
+    width: 320px;
+    height: 320px;
+    float: left;
+    padding:8px 50px 45px 0;
+}
+
+/*gallery*/
+.gallery_section{
+    width: 100%;
+    background: url("../images/gallery-b.JPG");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;  /* for Webkit kernal browser such as Chrome和Safari */
+    -o-background-size: cover;  /* for Opera */ 
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding:10px 0 45px 0;
+}
+.gallery_section h2{
+    color:#ffffff;
+}
+.gallery_tu li{
+    float: left;
+    width:33.3%;
+    padding:9px 0;
+}
+.gallery_tu li img{
+    float:left;
+    height:280px;
+    width:280px;
+    padding:9px 0;
+}
+
+/*contact us*/
+.contact_us{
+    width: 100%;
+    background: url("../images/contact-bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;  /* for Webkit kernal browser such as Chrome和Safari */
+    -o-background-size: cover;  /* for Opera */     
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; 
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding:20px 0 30px 0;
+}
+.contact_us h1{
+    color:#d4d3d3;
+}
+.contact_us h2{
+    color:#ffffff;
+}
+.contact_us .leave-msg{
+    float: center;
+}
+.contact_us .leave-msg div{
+    display: inline;
+}
+.contact_us .leave-msg input{
+    width: 280px;
+    height: 40px;
+    opacity: 0.8;
+}
+.contact_us .leave-msg input::-webkit-input-placeholder{
+    font-size: 20px;
+}
+.contact_us .leave-msg textarea{
+    resize: none;
+    width: 848px;
+    height: 150px;
+    opacity: 0.8;
+}
+.contact_us .leave-msg textarea::-webkit-input-placeholder{
+    font-size: 20px;
+}
+.contact_us .leave-msg button{
+    cursor: pointer;
+    width: 848px;
+    height: 50px;
+    opacity: 0.8;
+}
+.contact_us .leave-msg button p{
+    text-align: center;
+    font-size: 30px;
+    color:#474343;
+}
+
+/*business account*/
+.follow li{
+    display: inline;
+    cursor: pointer;
+}
+.follow img{
+    height:35px;
+    width: 35px;
+}
+
+/*slide*/
+#prev{
+    position: absolute;
+    left: 30px;
+    top: 350px;
+}
+#next{
+    position: absolute;
+    right: 30px;
+    top: 350px;
+}
+
+/*scroll_top button*/
+#scroll_top{
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.4;
+    right: 50px;
+    top: 600px;
+    opacity: 0.5;
+}
+
+/*fade animation*/
+@-webkit-keyframes fadeIn {
+  0% {opacity: .3;} 
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: .3} 
+  100% {opacity: 1}
+}
